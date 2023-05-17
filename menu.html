@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Coffe Sweet/Menu</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo-content">
+            <a href="./index.php" class="logo"><img src="./img/Mi proyecto (5).png"></a>
+            <p>COFFE SWEET</p>
+        </div>
+
+        <nav class="nav-bar">
+            <a href="">Menu</a>
+            <a href="./Login/logout.php">Cerrar sesion</a>
+            <span class="car" id="icon-car">
+                <ion-icon name="cart-outline"></ion-icon>
+                <div class="carrito" id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr class="carrito-item">
+                                <th>Imagen</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <!-- <div class="carrito-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$200.00</span>
+                    </div> -->
+                    <a href="" id="vaciar-carrito" class="btn">Vaciar Carro</a>
+                    <a href="" class="btn" id="procesar-pedido">Comprar</a>
+                </div>
+            </span>
+        </nav>
+    </header>
+
+    <div class="text-container">
+        <h3>Disfruta de Nuestros Productos!</h3>
+        <p>Conoce todo nuestro contenido</p>
+    </div>
+
+    <div class="container-father" id="lista-productos">
+
+
+    <div class="menu-container">
+        <h1>Pasteles</h1>
+        <div class="pastel-container">
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pcajeta.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">CAJETA TRES LECHES</p>
+                        <p class="prec__cake">400.00</p>
+                    <button class="cta-carrito" type="submit" data-id="1">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pchocolate.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">CHOCOLATE TRES LECHES</p>
+                    <p class="prec__cake">450.00</p>
+                    <button class="cta-carrito" type="submit" data-id="2">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pdurazno.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">DURAZNO TRES LECHES</p>
+                    <p class="prec__cake">350.00</p>
+                    <button class="cta-carrito" type="submit" data-id="3">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pfresa.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">FRESA TRES LECHES</p>
+                    <p class="prec__cake">400.00</p>
+                    <button class="cta-carrito" type="submit" data-id="4">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pzana.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">ZANAHORIA</p>
+                    <p class="prec__cake">375.00</p>
+                    <button class="cta-carrito" type="submit" data-id="5">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                    <div class="container-cake">
+                        <img src="./img/pchocoflan.png" class="img__cake">
+                    </div>
+                    <p class="paragraph__cake">CHOCOFLAN</p>
+                    <p class="prec__cake">300.00</p>
+                    <button class="cta-carrito" type="submit" data-id="6">Agregar al Carrito</button>
+            </div>
+
+        </div>
+
+        
+          
+    </div>
+
+    
+    <div class="menu-container">
+        <h1>Cafés</h1>
+        <div class="pastel-container">
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/camericano.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Café Americano</p>
+                <p class="prec__cake">50.00</p>
+                <button class="cta-carrito" data-id="7">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/cfrappe.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Frappe</p>
+                <p class="prec__cake">60.00</p>
+                <button class="cta-carrito" data-id="8">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/cfrappuccino.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Frappucino</p>
+                <p class="prec__cake">60.00</p>
+                <button class="cta-carrito" data-id="9">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/clatte.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Latte Frío</p>
+                <p class="prec__cake">70.00</p>
+                <button class="cta-carrito" data-id="10">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/cmocha.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Mocha</p>
+                <p class="prec__cake">55.00</p>
+                <button class="cta-carrito" data-id="11">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/colla.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Café de Olla</p>
+                <p class="prec__cake">60.00</p>
+                <button class="cta-carrito" data-id="12">Agregar al Carrito</button>
+            </div>
+
+        </div>
+
+        
+          
+    </div>
+
+    <div class="menu-container">
+        <h1>Licuados</h1>
+        <div class="pastel-container">
+            
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lfresa.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Fresa</p>
+                <p class="prec__cake">40.00</p>
+                <button class="cta-carrito" data-id="13">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lchocolate.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Chocolate</p>
+                <p class="prec__cake">50.00</p>
+                <button class="cta-carrito" data-id="14">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lmango.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Mango</p>
+                <p class="prec__cake">40.00</p>
+                <button class="cta-carrito" data-id="15">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lnaranja.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Naranja</p>
+                <p class="prec__cake">45.00</p>
+                <button class="cta-carrito" data-id="16">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lplatano.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Platano</p>
+                <p class="prec__cake">40.00</p>
+                <button class="cta-carrito" data-id="17">Agregar al Carrito</button>
+            </div>
+
+            <div class="cake">
+                <div class="container-cake">
+                    <img src="./img/lverde.png" class="img__cake">
+                </div>
+                <p class="paragraph__cake">Licuado Verde</p>
+                <p class="prec__cake">60.00</p>
+                <button class="cta-carrito" data-id="18">Agregar al Carrito</button>
+            </div>
+
+        </div>
+
+        
+          
+    </div>
+
+</div>
+
+
+    <footer>
+
+        <div class="footer__term">
+            <a href="./terminos/term.html">Condiciones de uso</a>
+            <a href="./terminos/politica.html">Aviso de Privacidad</a>
+            <a href="">Gestión del Copyright</a>
+        </div>
+
+        <div class="footer__redes">
+            <div class="btns">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="container-arriba">
+        <div class="button-arriba">
+            <i><ion-icon name="arrow-up-outline"></ion-icon></i>
+        </div>
+    </div>
+
+
+
+    <script src="menu.js"></script>
+    <script src="pedido.js"></script>
+
+
+    <!-- alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

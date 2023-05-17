@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./factura.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>factura</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Coffe Sweet</h1>
+
+<!-- 
+            <div class="input__box">
+                <input type="text" required>
+                <label>Cliente</label>
+            </div>
+
+            <div class="input__box">
+                <input type="email" required>
+                <label>Correo</label>
+            </div> -->
+
+
+        <div class="factura-wrapper">
+
+            <div class="container-tabla" id="carrito">
+            <table id="lista-compra">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th style="padding: 0 20px;">Eliminar Articulo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            </div>
+
+            <tr>
+                <th colspan="4" scope="col">SubTotal:</th>
+                <th scope="col">
+                    <p id="subtotal"></p>
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="4" scope="col">Iva:</th>
+                <th scope="col">
+                    <p id="iva"></p>
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="4" scope="col">Total:</th>
+                <th scope="col">
+                    <p id="total"></p>
+                </th>
+            </tr>
+
+        
+        </div>
+
+        <div id="loaders">
+            <img src="./img/loading-4802_256.gif" id="cargando">
+        </div>
+
+
+        <div class="container-buttons">
+            <button class="cta-factura" onclick="redireccion()">Seguir Comprando</button>
+            <button class="cta-factura" id="procesar-compra">Comprar</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container-arriba">
+        <div class="button-arriba">
+            <i><ion-icon name="arrow-up-outline"></ion-icon></i>
+        </div>
+    </div>
+
+
+    <script src="menu.js"></script>
+    <script src="factura.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
