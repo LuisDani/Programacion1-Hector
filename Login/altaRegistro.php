@@ -19,6 +19,7 @@ $usuariosArray = json_decode($usuariosJSON, true);
 foreach ($usuariosArray as $usuario) {
     if ($usuario['user'] === $registro->getUsername()) {
         echo "El usuario ya existe. Por favor, elige otro nombre de usuario.";
+        header("refresh:4; url='registrar.html'");
         exit();
     }
 }
