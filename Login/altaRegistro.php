@@ -12,7 +12,7 @@ $registro = new Registro($user, $email, $password);
 // Obtener el contenido actual del archivo usuarios.json
 $usuariosJSON = file_get_contents("../usuarios.json"); // Ajusta la ruta si es necesario
 
-// Decodificar el contenido JSON en un array asociativo
+// Decodificar el contenido JSON en un array 
 $usuariosArray = json_decode($usuariosJSON, true);
 
 // Verificar si el usuario ya existe
